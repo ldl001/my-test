@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no"/>
+    <meta charset="utf-8">
+    <title>轮播图</title>
+    <!-- 引入css文件 -->
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.5.0/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css"/>
+    <!-- 引入js文件 -->
+    <script src="js/jquery-3.3.1/jquery-3.3.1.js" type="text/javascript" charset="utf-8"></script>
+    <script src="bootstrap4/dist/js/bootstrap.bundle.js" type="text/javascript" charset="utf-8"></script>
+    <script src="bootstrap4/dist/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+    <style type="text/css">
+        ul{
+            padding: 0px;
+        }
+    </style>
+</head>
+<body>
+<!-- 轮播图区域 -->
+<!-- carousel：定义轮播包含框 -->
+<!-- slide：定义动画效果 -->
+<!-- data-ride="carsousel":定义轮播在页面加载时就可以开发动画播放 -->
+<div class="carousel slide" id="Carousel" data-ride="carousel">
+    <!-- 下方按钮列表 -->
+    <!-- carousel-indicators：定义轮播指示器包含框 -->
+    <ol class="carousel-indicators">
+        <!-- data-target="#Carousel"：指定目标包含器为div id="Carousel" -->
+        <!-- data-slide-to="X":定义播放顺序的下标 -->
+        <!-- active：定义轮播的活动项 -->
+        <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#Carousel" data-slide-to="1"></li>
+        <li data-target="#Carousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- 轮播图片 -->
+    <!-- carousel-inne：定义轮播图片包含框 -->
+    <ul class="carousel-inner">
+        <!-- carousel-item：定义轮播项包含框 -->
+        <li class="carousel-item active">
+            <!-- d-block w-100：以修正浏览器预设的图像对齐带来的影响 -->
+            <img src="img/1.jpg" class="d-block w-100" />
+        </li>
+        <li class="carousel-item">
+            <img src="img/2.jpg" class="d-block w-100" />
+        </li>
+        <li class="carousel-item">
+            <img src="img/3.jpg" class="d-block w-100" />
+        </li>
+    </ul>
+
+    <!-- 左右按钮 -->
+    <!-- carousel-control-prev / carousel-control-next-icon定义两个控制按钮，用于控制播放行为 -->
+    <!-- data-slide="prev" / data-slide="next"：激活按钮行为 -->
+    <a href="#Carousel" class="carousel-control-prev" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+
+    <a href="#Carousel" class="carousel-control-next" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+</body>
+</html>
